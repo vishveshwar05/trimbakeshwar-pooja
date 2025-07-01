@@ -1,95 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trimbakeshwar Pooja Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-    }
-    header {
-      background: #7b3f00;
-      color: white;
-      padding: 20px 0;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 30px;
-    }
-    .pooja-card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
+export default function TrimbakeshwarPooja() {
+  return (
+    <div className="min-h-screen bg-yellow-50 p-4">
+      <header className="text-center py-6">
+        <h1 className="text-4xl font-bold text-yellow-800">
+          Trimbakeshwar Pooja Services
+        </h1>
+        <p className="text-lg text-yellow-700 mt-2">
+          Authentic Rituals by Ajay Kulkarni & Chinmay Phadke Tandulwale
+        </p>
+      </header>
 
-<body>
-  <header class="text-center">
-    <h1>Trimbakeshwar Pooja Services</h1>
-    <p>Performed by Ajay Kulkarni & Chinmay Phadke Tandulwale</p>
-  </header>
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+        <Card className="bg-white shadow-lg rounded-2xl">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold text-yellow-700 mb-2">Narayan Nagbali</h2>
+            <p>Performed to free ancestral souls and relieve family curses.</p>
+          </CardContent>
+        </Card>
 
-  <div class="container mt-4">
-    <section class="mb-5">
-      <h2 class="mb-3">Available Poojas</h2>
-      <div class="row">
-        <div class="col-md-6 pooja-card">
-          <h4>Narayan Nagbali</h4>
-          <p>Performed to remove ancestral curses and free trapped souls. Best performed in Trimbakeshwar.</p>
-        </div>
-        <div class="col-md-6 pooja-card">
-          <h4>Kaal Sarp Dosh</h4>
-          <p>For those suffering due to placement of planets in their horoscope. Helps to neutralize dosha effects.</p>
-        </div>
-        <div class="col-md-6 pooja-card">
-          <h4>Tripindi Shraddha</h4>
-          <p>Performed for ancestors who did not receive proper last rites. Removes Pitru dosh and brings peace.</p>
-        </div>
-        <div class="col-md-6 pooja-card">
-          <h4>Navagraha Dosh</h4>
-          <p>To balance negative planetary influences and bring harmony in life.</p>
-        </div>
-      </div>
-    </section>
+        <Card className="bg-white shadow-lg rounded-2xl">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold text-yellow-700 mb-2">Kaal Sarp Dosh</h2>
+            <p>Removes obstacles caused by planetary alignments.</p>
+          </CardContent>
+        </Card>
 
-    <section class="mb-5">
-      <h2 class="mb-3">Pooja Dates & Location</h2>
-      <p><strong>Location:</strong> Near Trimbakeshwar Temple, Nashik, Maharashtra</p>
-      <p><strong>Best Days:</strong> Amavasya, Shraddha Paksha, and Grahan periods</p>
-      <p>Call us for booking available dates and timing.</p>
-    </section>
+        <Card className="bg-white shadow-lg rounded-2xl">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold text-yellow-700 mb-2">Tripindi Shraddha</h2>
+            <p>Ritual for ancestors who have not received Shraddha for 3 years.</p>
+          </CardContent>
+        </Card>
+      </section>
 
-    <section class="mb-5">
-      <h2 class="mb-3">Contact Us</h2>
-      <p><strong>Ajay Kulkarni:</strong> +91-XXXXXXXXXX</p>
-      <p><strong>Chinmay Phadke:</strong> +91-XXXXXXXXXX</p>
-      <p>Email or WhatsApp us to book your pooja in advance.</p>
-    </section>
-    <section id="facilities" style="padding: 20px; background-color: #fef3c7; border-radius: 10px; margin: 20px;">
-  <h2 style="color: #b45309; font-size: 24px;">🙏 Facilities Provided for Devotees</h2>
-  <ul style="line-height: 1.8; font-size: 18px; color: #333;">
-    <li>✅ <strong>Free Food</strong> for all pooja participants</li>
-    <li>🛏️ <strong>Free Accommodation</strong> near Trimbakeshwar temple</li>
-    <li>📿 Personalized pooja guidance from experienced priests</li>
-    <li>☎️ 24x7 Contact for pooja booking and details</li>
-  </ul>
-</section>
+      <section className="bg-yellow-100 p-6 mt-10 rounded-xl mx-6">
+        <h2 className="text-2xl font-bold text-yellow-800 mb-4">Facilities Provided</h2>
+        <ul className="list-disc pl-5 space-y-2 text-lg text-yellow-900">
+          <li>✅ Free Food for all pooja participants</li>
+          <li>🛏️ Free Accommodation near Trimbakeshwar temple</li>
+          <li>📿 Personalized pooja guidance</li>
+          <li>🛕 No need to bring any pooja samagri (all items provided)</li>
+          <li>☎️ 24x7 Contact for booking and inquiries</li>
+        </ul>
+      </section>
 
-  </div>
+      <section className="bg-white shadow-inner p-6 mt-10 rounded-xl mx-6">
+        <h2 className="text-2xl font-bold text-yellow-800 mb-4">Contact Information</h2>
+        <p className="text-lg text-gray-700">📍 Building: <strong>Amrapali</strong>, Near Kund, Trimbakeshwar, Nashik, Maharashtra – 422212</p>
+        <p className="text-lg text-gray-700 mt-2">📞 Ajay Kulkarni: 7020132222</p>
+        <p className="text-lg text-gray-700">📞 Chinmay Phadke Tandulwale: 9028792222</p>
+        <p className="text-lg text-blue-700 underline mt-2">
+          <a href="https://maps.app.goo.gl/aPii7SsnUNU9ng67A?g_st=aw" target="_blank" rel="noopener noreferrer">
+            📌 View Location on Google Maps
+          </a>
+        </p>
+      </section>
 
-  <footer>
-    <p>© 2025 Trimbakeshwar Pooja Services | Designed by Vishveshwar Deshpande</p>
-  </footer>
-</body>
+      <section className="p-6 mt-10 mx-6">
+        <h2 className="text-2xl font-bold text-yellow-800 mb-4">Temple Photo</h2>
+        <img
+          src="/images/trimbakeshwar-temple.jpg"
+          alt="Trimbakeshwar Temple"
+          className="rounded-xl shadow-md w-full max-w-3xl mx-auto"
+        />
+      </section>
 
-</html>
+      <footer className="text-center py-6 mt-10 text-yellow-600">
+        © 2025 Trimbakeshwar Pooja Services. All rights reserved.
+      </footer>
+    </div>
+  );
+}
